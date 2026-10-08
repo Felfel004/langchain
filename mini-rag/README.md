@@ -20,7 +20,11 @@ The system retrieves relevant chunks from Chroma and uses Qwen3:4B to generate g
 
 
 
-!\[LangChain RAG Assistant](assets/rag-demo.png)
+<p align="center">
+
+&#x20; <img src="assets/rag-demo.png" alt="LangChain RAG Assistant" width="900">
+
+</p>
 
 
 
@@ -32,47 +36,48 @@ The system retrieves relevant chunks from Chroma and uses Qwen3:4B to generate g
 
 LangChain Documentation
 
-&#x20;       ↓
+\&#x20;       ↓
 
 Tavily Crawl
 
-&#x20;       ↓
+\&#x20;       ↓
 
 LangChain Documents
 
-&#x20;       ↓
+\&#x20;       ↓
 
 RecursiveCharacterTextSplitter
 
-&#x20;       ↓
+\&#x20;       ↓
 
 nomic-embed-text
 
-&#x20;       ↓
+\&#x20;       ↓
 
 Chroma Vector Database
 
-&#x20;       ↓
+\&#x20;       ↓
 
 User Question
 
-&#x20;       ↓
+\&#x20;       ↓
 
 Semantic Retrieval
 
-&#x20;       ↓
+\&#x20;       ↓
 
 Top Relevant Chunks
 
-&#x20;       ↓
+\&#x20;       ↓
 
 Qwen3:4B
 
-&#x20;       ↓
+\&#x20;       ↓
 
 Answer
 
-&#x20;       ↓
+\&#x20;       ↓
 
 Streamlit UI
+
 
