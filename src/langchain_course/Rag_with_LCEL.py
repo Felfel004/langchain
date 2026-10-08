@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_ollama import ChatOllama, OllamaEmbeddings
 from langchain_pinecone import PineconeVectorStore
 
 
@@ -18,8 +18,18 @@ print("Initializing components...")
 # 1. Initialize embeddings and LLM
 # ============================================================
 
-embeddings = OpenAIEmbeddings()
-llm = ChatOpenAI()
+embeddings = OllamaEmbeddings(
+    model="nomic-embed-text"
+)
+
+
+# ---------------------------------------------------------
+# 2. LLM
+# ---------------------------------------------------------
+# Generates the final natural-language answer.
+llm = ChatOllama(
+    model="qwen3:4b"
+)
 
 
 # ============================================================

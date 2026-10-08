@@ -218,3 +218,5 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Chroma databases
+mini-rag/chroma_db_nomic/
